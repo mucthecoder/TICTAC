@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe Game</title>
+    
+   
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About Game</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#play">Play Game</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h1>About The Game</h1>
+        <p>This game is about Tic Tac Toe. It has 9 blocks where players can place their marks (X or O) and play against each other.</p>
+      <p>you can check how to play the game by watching the video below</p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/5SdW0_wTX5c?si=pBHp54DXSf0s8JMj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </section>
+
+
+
+    <section id="play">
+        <h1>Play The Game</h1>
+        <div>
+            <label for="gameMode">Choose Game Mode:</label>
+            <select id="gameMode">
+                <option value="person">Play with Someone</option>
+                <option value="cpu">Play with Computer</option>
+            </select>
+        </div>
+        <div class="game-board" id="gameBoard">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        <div class="message" id="message"></div>
+        <button id="resetButton">clear</button>
+        
+    </section>
+
+
+    <section id="contact">
+        <h1>Contact us</h1>
+        
+        <form action="https://formspree.io/f/mdoqqzvo" method="POST">
+            <label>Name: <input type="text" name="name" id="name" required></label><br>
+            <label>Cell Number: <input type="number" name="number" id="number" required></label><br>
+            <label>Email: <input type="email" name="_replyto" id="email" required></label><br>
+            <label>Comment: <input type="text" name="Comment" id="comment"></label>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    
+    <script src="game.js"></script>
+   
+
+    
